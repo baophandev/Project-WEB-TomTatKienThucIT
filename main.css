@@ -13,16 +13,17 @@ body{
     background-color: #060631;
     top: 0;
     left: -80px;
-    width: 900px;
+    width: 850px;
     height: 800px;
     border-radius: 0 500px 500px 0;
     animation: float 6s ease-in-out infinite;
+    z-index: -1;
 }
 
 .search{
     position: absolute;
-    top: 300px;
-    left: 700px;
+    top: 159px;
+    left: 650px;
 }
 
 .search > input{
@@ -35,6 +36,18 @@ body{
     text-align: center;
     animation: color 1s ease-in-out infinite;
 
+}
+
+.search > button{
+    background-color: transparent;
+    color: green;
+    outline: none;
+    border: 0.5px solid green;
+    cursor: pointer;
+    width: 60px;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
 }
 
 @keyframes color{
@@ -79,6 +92,15 @@ body{
     margin-top: 20px;
 }
 
+.content {
+    width: 289px;
+    min-height: 450px;
+    background-color: red;
+    position: absolute;
+    top: 200px;
+    margin-left: 652px;
+}
+
 @media screen and (max-width: 768px) {
     .search {
         top: 150px;
@@ -93,6 +115,17 @@ body{
     .logoCTU {
         margin-left: 15px;
     }
+
+    .search > button{
+        margin-top: 5px;
+    }
+
+    .content {
+        
+        top: 230px;
+        margin-left: 100px;
+    }
+
 }
 
 
