@@ -1,0 +1,80 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #000022;
+    overflow: hidden;
+}
+
+.big-circle{
+    position: absolute;
+    background-color: #060631;
+    top: 0;
+    left: -80px;
+    width: 800px;
+    height: 800px;
+    border-radius: 500px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.search{
+    position: absolute;
+    top: 300px;
+    left: 700px;
+}
+
+.search > input{
+    background-color: transparent;
+    border: 1px solid rgb(5, 89, 40);
+    width: 220px;
+    height: 30px;
+    color: green;
+    border-radius: 5px;
+    text-align: center;
+    animation: color 1s ease-in-out infinite;
+
+}
+
+@keyframes color{
+    from{
+        border: 1px solid rgb(5, 89, 40);
+    }
+    to{
+        border: 1px dashed rgb(19, 123, 62);
+    }
+}
+
+.search > input:focus{
+    transition: 0.5s;
+    outline: none;
+    border:1px solid rgb(32, 159, 85) ;
+    
+}
+
+::placeholder{
+    color: green;
+}
+
+@keyframes float{
+    0%{
+        transform: translateX(0px);
+        border-radius: 800px;
+    }
+    50%{
+        transform: translateX(30px);
+        border-radius: 51% 49% 52% 48% / 10% 86% 14% 90%;
+    }
+    100%{
+        transform: translateX(0px);
+        border-radius: 800px;
+    }
+}
+
+.logoCTU{
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
