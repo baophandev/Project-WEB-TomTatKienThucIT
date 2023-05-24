@@ -20,58 +20,6 @@ body {
     z-index: -1;
 }
 
-.search {
-    position: absolute;
-    top: 159px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.search>input {
-    background-color: transparent;
-    border: 1px solid rgb(5, 89, 40);
-    width: 70%;
-    max-width: 300px;
-    height: 30px;
-    color: green;
-    border-radius: 5px;
-    text-align: center;
-    animation: color 1s ease-in-out infinite;
-}
-
-.search>button {
-    background-color: transparent;
-    color: green;
-    outline: none;
-    border: 0.5px solid green;
-    cursor: pointer;
-    width: 20%;
-    max-width: 100px;
-    text-align: center;
-    height: 30px;
-    border-radius: 5px;
-}
-
-@keyframes color {
-    from {
-        border: 1px solid rgb(5, 89, 40);
-    }
-
-    to {
-        border: 1px dashed rgb(19, 123, 62);
-    }
-}
-
-.search>input:focus {
-    transition: 0.5s;
-    outline: none;
-    border: 1px solid rgb(32, 159, 85);
-}
-
 ::placeholder {
     color: green;
 }
@@ -93,20 +41,43 @@ body {
     }
 }
 
-.logoCTU {
-    width: 80px;
-    height: 80px;
-    margin-left: 30px;
-    margin-top: 20px;
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 3px;
 }
 
-.content {
-    width: 80%;
-    max-width: 600px;
-    min-height: 450px;
-    background-color: red;
-    position: absolute;
-    top: 300px;
-    left: 50%;
-    transform: translateX(-50%);
+.search{
+
+}
+
+.search > input{
+    background-color: transparent;
+    width: 235px;
+    height: 25px;
+    border: 1px solid green;
+    border-radius: 3px;
+}
+
+.search > button{
+    background-color: transparent;
+    height: 30px;
+    border: 1px solid green;
+    color: green;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.content{
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
+    margin: 10px;
+    border-radius: 3px;
 }
