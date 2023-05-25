@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
+<body onload="">
     <header>
     </header>
     <main>
@@ -21,31 +21,19 @@
             <div class="search">
                 <input type="text" placeholder="Nhập mã hoặc tên học phần" id="search-space">
                 <button id="search-button" onclick="show()">Search</button>
-            </div>
-            <div class="content">
-                <div class="content-top">
-                    <div class="img">
-                        <img src="image/8022682955_421bc6ff5a_b-e1629676847648.webp" alt="">
-                    </div>
-                    <div class="topic">
-                        <p>Lý thuyết đồ thị - <span style="color: rgb(186, 186, 70);">CT175</span></p>
-                        <p>Độ khó <span style="color: green;">- </span><span style="color: rgb(115, 187, 115);">- </span><span style="color: rgb(212, 228, 147);">- </span><span style="color: orange;">- </span><span style="color: red;">- </span></p>
-                        <p style="color: rgb(192, 192, 77);"><i class="fas fa-pen-square"></i> Gia Bảo</p>
-                    </div>
-                </div>
-                <div class="content-bottom">
-                    <p>Đi sâu nghiên cứu về đồ thị, các thuật toán liên quan tới đồ thị khó vải ra mà các em phải hiểu và học thuộc. Có code tổng hợp thi cuối kỳ nhưng phải hiểu bài nha.</p>
-                </div>
-                <div class="document">
-                    <a href="Document/Phan Gia Bao Thoery Graph.pdf">code cả năm học</a>
-                </div>
+                
             </div>
             <div class="content-none">
                 <div class="content-top">
                     <p style="color: rgb(198, 109, 109)">Không tìm thấy dữ liệu</p>
                 </div>
             </div>
+            <div class="show-container">
+
+            </div>
+            <button id="reset-button" onclick="load()">Reset</button>
         </article>
+        
     </main>
     <script src="JS/script.js"></script>
 </body>
