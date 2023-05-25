@@ -42,19 +42,15 @@ body {
 }
 
 .container{
-    position: relative;
-    display: flex;
+    position: absolute;
     flex-direction: column;
     border: 1px solid green;
     width: fit-content;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
     border-radius: 3px;
-}
-
-.search{
-
+    transition: 2s;
+    top: 20%;
+    left: 40%;
 }
 
 .search > input{
@@ -63,6 +59,12 @@ body {
     height: 25px;
     border: 1px solid green;
     border-radius: 3px;
+    color: green;
+}
+
+.search > input:focus{
+    outline: none;
+    border-color: rgb(47, 255, 92);
 }
 
 .search > button{
@@ -76,8 +78,96 @@ body {
 
 .content{
     width: 300px;
-    height: 300px;
+    min-height: 300px;
     border: 1px solid green;
     margin: 10px;
     border-radius: 3px;
+    position: relative;
+    display: none;
+    transition: 2s;
+}
+
+.img {
+    background-color: transparent;
+    border: 1px solid green;
+    width: 100px;
+    height: 120px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.img > img{
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.content-top{
+    display: flex;
+    flex-direction: row;
+}
+
+.topic > p{
+    color: white;
+}
+
+.content-none{
+    display: none;
+}
+
+.content-bottom{
+    color: white;
+}
+
+.content-bottom > p{
+    margin: 0 5px;
+    text-align: justify;
+}
+
+.document{
+    display: flex;
+    flex-direction: row;
+}
+
+.document > a{
+    text-decoration: none;
+    color: green;
+    border: 1px solid green;
+    width: 50px;
+    margin: 5px;
+    text-align: center;
+    color: aqua;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        top: 30%;
+        left: 30%;
+    }
+
+    .big-circle {
+        width: 500px;
+        height: 600px;
+    }
+
+    .content {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        top: 40%;
+        left: 20%;
+    }
+
+    .big-circle {
+        width: 300px;
+        height: 400px;
+    }
+
+    .content {
+        width: 150px;
+    }
 }
