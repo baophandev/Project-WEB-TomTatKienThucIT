@@ -48,14 +48,19 @@ main{
 }
 
 .container{
-    position: absolute;
+    display: flex;
     flex-direction: column;
     border: 1px solid green;
-    width: fit-content;
     padding: 10px;
     border-radius: 3px;
     transition: 2s;
     margin-top: 30px;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
 }
 
 .search > input{
@@ -65,7 +70,7 @@ main{
     border: 1px solid green;
     border-radius: 3px;
     color: green;
-    margin-left: 10px;
+    margin-right: 5px;
 }
 
 .search > input:focus{
@@ -112,7 +117,9 @@ main{
     flex-direction: row;
 }
 
-.topic > p{
+.topic>p {
+    color: white;
+    margin: 0 5px 2px 2px;
     color: white;
 }
 
@@ -151,12 +158,16 @@ main{
 }
 
 #reset-button{
-    margin-left: 10px;
+    background-color: transparent;
+    color: red;
+    border: 1px dashed green;
     margin-top: 2px;
 }
 
 @media (max-width: 768px) {
-    
+    .container{
+        width: 320px;
+    }
 }
 
 @media (max-width: 480px) {
