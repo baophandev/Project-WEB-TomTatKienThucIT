@@ -119,7 +119,7 @@ main{
 
 .topic>p {
     color: white;
-    margin: 0 5px 2px 2px;
+    margin: 2px 5px 2px 2px;
     color: white;
 }
 
@@ -129,6 +129,7 @@ main{
 
 .content-bottom{
     color: white;
+    min-height: 150px;
 }
 
 .content-bottom > p{
@@ -139,6 +140,7 @@ main{
 .document{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .document > a{
@@ -150,6 +152,14 @@ main{
     text-align: center;
     color: aqua;
     border-radius: 5px;
+    min-height: 100px;
+    padding: 5px;
+}
+
+.document > a:hover{
+    color: rgb(145, 251, 215);
+    font-size: 17px;
+    transition: 0.5s;
 }
 
 .show-container{
